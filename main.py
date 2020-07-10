@@ -1,11 +1,19 @@
-import requests
+ # kostruksi dasar python
 
-# print('Hewlo world')
+ # SEQUENTIAL : eksekusi berurutan
+print('Hewlo world')
+print('Ridho Abdul Majid')
 
-try:
-    r = requests.get('https://google.com')
-    print(r.status_code)
-    if r.status_code == 200:
-        print(r.text)
-except Exception as e:
-    print('ada error', e)
+
+# PERCABANGAN : if else condition
+going_fast = True
+if going_fast:
+    print('lets rush !!!')
+else:
+    print('lets take a break')
+
+# PERULANGAN : Looping
+repeat = 10
+
+for index in range(1, repeat+1): #jumlah perulangan = (10+1) - 1, so 10times
+    print(f'Lets try {index}')
