@@ -20,17 +20,24 @@ print('Sapa semua pelajar :')
 for a in siswa:
     print(f'{a}')
 
-#----------------------------------#
+# ----------------------------------#
 for a in range(0, len(siswa)):
-    print(f'{a+1} Halo lagi {siswa[a]}')
+    print(f'{a + 1} Halo lagi {siswa[a]}')
 
 print('------------------------------------------------------------------')
+
 # TIPE DATA DICTIONARY
 # KVP -> OBJECT DI JAVASCRIPT
 
 obj = {
     'nama': 'ridho',
-    'usia': 26
+    'usia': 26,
+    'hobby': {
+        'olahraga': 'renang',
+        'makanan': 'nasi padang'
+    },
+    'panggilan': ['ido', 'ridho', 'majid']
 }
-print(obj['nama'])
-
+# akses nama objek['key']['another key']
+print(obj['hobby']['olahraga'])
+print(obj['panggilan'][1])
